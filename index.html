@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>FormsFontsiFrames</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Merienda&family=Patrick+Hand&display=swap" rel="stylesheet">
+</head>
+<style>
+	
+	.webpage {
+		display: grid;
+		grid-auto-columns: 3fr 3fr 3fr 3fr;
+		grid-auto-rows: 3fr 3fr 3fr 3fr;
+  grid-gap: 20px;
+	}
+	.webpage div { background-color: bisque}
+	.header {
+		grid-area: 1 / 1 / 2 / 4;
+		font-family: 'Berkshire Swash', cursive;
+		font-size: 40px;
+		text-align: center;
+	}
+	.email {
+		grid-area: 2 / 1 / 4 / 2;
+		font-family: 'Patrick Hand', cursive;
+		text-align: center;
+	}
+	.menu {
+		grid-area: 2 / 2 / 4 / 4;
+		font-family: 'Merienda', cursive;
+		padding: 20px
+	}
+	.footer {
+		grid-area: 4 / 1 / 5 / 4;
+		text-align: center;
+		font-family: 'Berkshire Swash', cursive;
+		font-size: 40px;
+	}
+	ul {
+		list-style-type: none;
+		margin: 1px;
+		padding: 1px;
+		overflow: hidden;
+		text-align: center;
+	}
+	li a {
+		display: flow-root;
+		color: black;
+		text-align: center;
+		padding: 16px;
+		text-decoration: none;
+	}
+	li a:hover {background-color: white;}
+</style>
+	
+	
+<body>
+	<div class="webpage">
+		
+	<div class="header">Welcome on in!
+		<ul style="font-size: 20px">
+				<li><a herf="#home">Home</a></li>
+				<li><a herf="#message">Message of the day</a></li>
+				<li><a herf="#extras">Extras</a></li>
+				<li><a herf="#blog">Blog</a></li>
+				<li><a herf="#about">About Us</a></li>
+				<li><a herf="#contact">Contact Us</a></li>
+			</ul>
+		</div>
+	<div class="email">
+		<h1 style="font-size: 30px;">Email Sign Up</h1>
+		Want to be the first be update in all things sign up for emails.
+		<br>
+	<form action="">
+		<label for="First">Frist Name:</label><br>
+		<input type="text" id="First"><br>
+		
+		<label for="Last">Last Name:</label><br>
+		<input type="text" id="Last"><br>
+	
+		<label for="email">Email:</label><br>
+		<input type="text" id="email"><br>
+		
+		<button type="submit">Submit</button>
+		</form>
+	</div>
+	<div class="menu">
+		<h1 style="text-align: center">Want to learn how to use illustrator for the Ipad</h1>
+		<br>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/sYF2JCgFOEQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+		Here is a video that help me get more familiar with Adobe Illustrator on the Ipad.
+		Let me down below if this this was helpful?
+		<br>
+		<br>
+		<form action="">
+		<input type="radio" id="NO">
+		<label for="No">No</label><br>
+		<input type="radio" id="Yes">
+		<label for="Yes">Yes</label><br>
+		<input type="radio" id="didn't help">
+		<label for="didn't help">Didn't Help</label><br>
+		<button type="submit">Submit</button>
+		</form>
+	  </div>
+	<div class="footer"><i> Follow all Social Media!</i>
+		<br>
+			Twitter:<a href="https://www.twitter.com"><b>Twitter Name</b></a> Instagram:<a href="https://www.instagram.com"><b>Instagram Name</b></a>
+		</div>
+	</div>
+	
+		
+	
+	
+</body>
+</html>
